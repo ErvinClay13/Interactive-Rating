@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background: black;
+    display: flex;
+
+}
+
+.section1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section2 {
+    
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container{
+    
+    padding: 30px;
+    min-height: 363.6;
+    min-width: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(67, 67, 83);
+    border-radius: 20px;
+    /* align-items: center; */
+}
+
+
+img{
+    padding: 10px;
+    border: 2px;
+    border-radius: 80px;
+    background-color: rgb(99, 99, 120);
+}
+
+.star-rotate {
+    animation-name: staranime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes staranime {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+}
+
+h1{
+    font-size: 25px;
+    margin-top: 20px;
+    color: white;
+}
+
+.para1{
+    font-size: 15px;
+    margin-top: 15px;
+    color: rgb(219, 215, 215);
+}
+
+.rates{
+    display: flex;
+    gap: 12px;
+}
+
+.rate{
+    color: white;
+    border-radius: 80px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: rgb(99, 99, 120);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.selected {
+    color: white;
+    border-radius: 80px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: hsl(217, 12%, 63%);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.rate:visited{background-color: hsl(217, 12%, 63%); color: hsl(0, 0%, 100%);}
+.rate:hover {background-color: hsl(25, 97%, 53%); color: hsl(0, 0%, 100%);}
+.rate:active {background-color: hsl(217, 12%, 63%); color: hsl(0, 0%, 100%);}
+
+/* .submit-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+} */
+#submitt{
+    width: 300px;
+    height: 50px;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 113, 4);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#submitt:hover{
+    background-color: white;
+    color: rgb(255, 113, 4);
+}
+
+.illistration{
+    width: 45%;
+    height: auto;
+    margin: 1px auto 0 auto;
+    background-color: rgb(67, 67, 83);
+}
+h3{
+    
+    height: 25px;
+    width: 160px;
+    font-size: 15px;
+    color: rgb(255, 113, 4);
+    background-color: hsl(240, 1%, 39%);
+    border-radius: 40px;
+    align-content: center;
+    margin-left: 70px;
+   
+}
+
+
+#arrowback{
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+#arrowback:hover{
+    background-color: rgba(255, 162, 2, 0.716);
+}
